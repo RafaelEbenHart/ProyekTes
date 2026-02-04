@@ -10,7 +10,8 @@ and i can't stand alone,
 i need you stand by my side.
 
 Maap aku dah nyakitin perasaan lu,
-Aku gatau harus gimana cara sampainnya dengan bener
+Aku gatau harus gimana cara sampainnya
+dengan ga sesakit itu,
 maapkan BF mu yang 0 skill talk ini😭😭😭
 
 
