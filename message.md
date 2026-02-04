@@ -9,9 +9,9 @@ we're facing future together
 and i can't stand alone,
 i need you stand by my side.
 
-Maap aku dah nyakitin perasaan lu
-tapi aku harus buatnya untuk reminder,
-jgn pikirin soal aku dulu,
-pikirin soal diri lu sendiri aja dulu
+Maap aku dah nyakitin perasaan lu,
+Aku gatau harus gimana cara sampainnya dengan bener
+maapkan BF mu yang 0 skill talk ini😭😭😭
+
 
 ![](standcar.gif) ![](sadcar.gif) ![](bananacar.gif)
