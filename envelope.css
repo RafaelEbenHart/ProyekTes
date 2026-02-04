@@ -1,0 +1,139 @@
+/* ================= ENVELOPE WRAPPER ================= */
+.envelope-wrapper {
+  position: absolute;
+  bottom: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;          /* +20% lebar */
+  height: 550px;         /* sedikit lebih tinggi */
+  cursor: pointer;
+  perspective: 1400px;
+  z-index: 4;
+}
+
+/* ================= ENVELOPE ================= */
+.envelope {
+  position: absolute;
+  inset: 0;
+}
+
+/* BODY */
+.body {
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow:
+    0 45px 140px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.95);
+  z-index: 1;
+}
+
+/* FLAPS */
+.flap {
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+}
+
+/* TOP */
+.flap-top {
+  clip-path: polygon(0 0, 50% 62%, 100% 0);
+  transform-origin: top;
+  transition: transform 0.8s ease, opacity 0.4s ease;
+  background-color: #dbdbdb;
+  z-index: 6;
+}
+
+/* BOTTOM */
+.flap-bottom {
+  clip-path: polygon(0 100%, 50% 45%, 100% 100%);
+  z-index: 2;
+}
+
+/* LEFT */
+.flap-left {
+  clip-path: polygon(0 0, 50% 50%, 0 100%);
+  z-index: 3;
+}
+
+/* RIGHT */
+.flap-right {
+  clip-path: polygon(100% 0, 50% 50%, 100% 100%);
+  z-index: 3;
+}
+
+/* ================= PAPER ================= */
+.paper {
+  position: absolute;
+  width: 90%;              /* lebih lebar */
+  height: 100%;             /* lebih tinggi */
+  top: 7%;
+  left: 5%;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 35px 100px rgba(0,0,0,0.4);
+  transform: translateY(80px);
+  opacity: 0;
+  overflow-y: auto;        /* ✅ SCROLL */
+  scrollbar-width: thin;
+  transition: transform 0.9s ease, opacity 0.6s ease;
+  z-index: 0;
+}
+
+/* ================= MARKDOWN ================= */
+.markdown img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 18px 0;
+}
+
+.markdown a {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 22px;
+  background: #00aaff;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.markdown a:hover {
+  background: #008fd1;
+}
+
+.markdown h2 {
+  margin-bottom: 14px;
+}
+
+.markdown p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* ================= OPEN STATE ================= */
+.envelope-wrapper.open .flap-top {
+  transform: rotateX(180deg);
+  opacity: 0;
+}
+
+.envelope-wrapper.open .paper {
+  transform: translateY(-190px);  /* naik lebih tinggi */
+  opacity: 1;
+  z-index: 7;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .envelope-wrapper {
+    width: 96%;
+    height: 340px;
+    bottom: -120px;
+  }
+
+  .paper {
+    padding: 24px;
+  }
+}

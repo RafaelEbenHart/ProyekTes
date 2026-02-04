@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>XYZ Survey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="background.css" />
+  <link rel="stylesheet" href="envelope.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">XYZ</div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <p class="subtitle">
+      Sebelum mulai survei, buka pesan ini dulu
+    </p>
+
+    <!-- ENVELOPE -->
+    <div class="envelope-wrapper" id="envelope">
+
+      <!-- PAPER -->
+      <div class="paper">
+        <div id="message" class="markdown">Loading...</div>
+      </div>
+
+      <!-- ENVELOPE SHAPE -->
+      <div class="envelope">
+        <div class="flap flap-top"></div>
+        <div class="flap flap-left"></div>
+        <div class="flap flap-right"></div>
+        <div class="flap flap-bottom"></div>
+        <div class="body"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MARKDOWN PARSER -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
