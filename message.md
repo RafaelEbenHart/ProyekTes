@@ -1,4 +1,4 @@
-I'm sorry,aku sadar aku terlalu berlebihan
+I'm really sorry,aku sadar aku terlalu berlebihan
 nyebut kau mirip dengan dia,
 sedangkan kau jauh lebih baik dari pada dia,
 mitak jauh lebih pinter.
